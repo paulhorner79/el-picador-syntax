@@ -1,0 +1,213 @@
+@import "syntax-variables";
+
+atom-text-editor, :host { /* :host added */
+    background-color: @syntax-background-color;
+    color: @syntax-text-color;
+
+    .invisible-character,
+    .wrap-guide,
+    .indent-guide{
+        color: @syntax-invisible-character-color;
+        opacity: 0.8;
+    }
+
+    .wrap-guide {
+        width: 1px;
+    }
+
+    .gutter {
+        background-color: @syntax-gutter-background-color;
+        color: @syntax-gutter-text-color;
+    }
+
+    .gutter .line-number.cursor-line {
+        background-color: @syntax-gutter-background-color-selected;
+        color: @syntax-gutter-text-color-selected;
+    }
+
+    .gutter .line-number.cursor-line-no-selection {
+        color: @syntax-gutter-text-color-selected;
+    }
+
+    .selection .region {
+        background-color: @syntax-selection-color;
+    }
+
+    .search-results .marker .region {
+        background-color: transparent;
+        border: @syntax-result-marker-color;
+    }
+
+    .search-results .marker.current-result .region {
+        border: @syntax-result-marker-color-selected;
+    }
+
+    .cursor {
+        color: @syntax-cursor-color;
+    }
+
+    .line.cursor-line {
+        background-color: @syntax-cursor-line-color;
+    }
+}
+
+.comment {
+    color: @comment;
+}
+.string {
+    color: @string;
+}
+
+/** CONSTANTS **/
+.constant {
+    color: @constant;
+}
+.constant.numeric,
+.constant.language,
+.constant.character,
+.constant.other {
+    font-weight: bold;
+}
+.constant.entity {
+    color: @entity;
+}
+
+/** VARIABLES **/
+.variable {
+    color: @variable;
+}
+.variable.parameter {
+    font-style: italic;
+}
+.variable.other.property {
+    color: @variable-prop;
+    font-weight: normal;
+}
+
+/** KEYWORDS - bold */
+.keyword {
+    color: @keyword;
+    font-weight: bold;
+}
+.keyword.other {
+    font-weight: normal;
+}
+.keyword.other.unit {
+    color: @constant;
+}
+
+/** STORAGE  **/
+.storage {
+    color: @storage;
+}
+.storage.modifier,
+.storage.type {
+    font-weight: bolder;
+}
+
+/** ENTITIES  **/
+.entity {
+    color: @entity;
+}
+.entity.name.class,
+.entity.name.function {
+    font-weight: bolder;
+}
+.entity.other.attribute-name {
+    color: @constant;
+}
+
+/** SUPPORT **/
+.support {
+    color: @support;
+}
+.support.constant {
+    color: @constant;
+    font-weight: bolder;
+}
+.support.function {
+    font-weight: bolder;
+}
+.support.type,
+.support.function.magic {
+    font-style: italic;
+}
+
+/** META **/
+.meta.function-call {
+	color: @function;
+}
+.meta.function-call.object {
+	font-style: italic;
+}
+.meta.brace.curly,
+.punctuation.section.property-list,
+.punctuation.section.scope {
+    font-weight: bold;
+}
+
+/** Punctuation **/
+.punctuation.entity {
+    color: @entity;
+}
+.punctuation.keyword {
+    color: @keyword;
+}
+.punctuation.comment {
+    color: @comment;
+}
+.punctuation.storage,
+.entity.other.attribute-name .punctuation {
+    color: @storage;
+}
+.punctuation.support {
+    color: @support;
+}
+.punctuation.variable {
+    color: @variable;
+}
+
+/** INVALID **/
+.invalid {
+    color: @syntax-text-color;
+    background-color: @syntax-color-removed;
+}
+.invalid .deprecated {
+	color: @syntax-text-color;
+	background-color: @syntax-color-modified;
+}
+
+/** OTHER **/
+.focusable-panel {
+    opacity: 1;
+    box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+}
+
+/** Markdown **/
+.source.gfm .markup {
+    -webkit-font-smoothing: auto;
+    &.heading {
+        color: @support;
+    }
+    &.markup.raw,
+    &.markup.raw .support {
+        color: @comment;
+    }
+}
+
+/** git updates **/
+.git-line-added,
+.git-line-added:before {
+    color: @syntax-color-added;
+    opacity: 1;
+}
+.git-line-modified,
+.git-line-modified:before {
+    color: @syntax-color-modified;
+    opacity: 1;
+}
+.git-line-removed,
+.git-line-removed:before {
+    color: @syntax-color-removed;
+    opacity: 1;
+}

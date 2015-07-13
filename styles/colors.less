@@ -1,0 +1,56 @@
+/**
+ * Background Colours
+ *
+ * @bg:     the main background colour
+ * @bg-0:   selection colour - slightly lighter or darker than the background
+ * @bg-1:   cursor highlight colour - slightly lighter or darker than
+ *          the background
+ * @bg-2:   gutter colour - slight contrast with background
+ * @bg-3:   gutter selection colour - slight contrast with gutter
+ */
+@bg-0:          #404040;
+@bg:            #252525;
+@bg-1:          #353535;
+@bg-2:          #1a1a1a;
+@bg-3:          #323232;
+
+/**
+ * Core Text Colours
+ *
+ * @text:   main text colour
+ * @text-1: gutter text/variable properties - slightly darker or lighter than
+ *          the text
+ * @text-2: comments - should be readable on background but distinct from text
+ *          colour
+ * @text-3: invisibles - about halfway between text and background
+ */
+@text:          #f6f6f6;
+@text-1:        #cdcdcd;
+@text-2:        #909090;
+@text-3:        #4c555a;
+
+/**
+ * Tints
+ *
+ * @color-1: normally used for storage and keywords
+ * @color-2: normally used for constants
+ * @color-3: normally used for support and functions
+ * @color-4: normally used for entities
+ * @color-5: normally used for the string colour.  In most cases a slight
+ *           contrast to the text colour
+ */
+@color-1:       #e24c38;
+@color-2:       #e28438;
+@color-3:       #40a977;
+@color-4:       #49c9eb;
+@color-5:       #eff0a9;
+
+/**
+ * Git colours.  These are used to highlight if something has changed (removed,
+ * modified, added, or renamed).  These can reuse the existing colours
+ * (@color-1, @color-2 etc), or can be specified individually.
+ */
+@removed:       @color-1;
+@modified:      @color-2;
+@added:         @color-3;
+@renamed:       @color-4;

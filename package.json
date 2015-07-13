@@ -1,0 +1,17 @@
+{
+  "name": "El Picador",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A dark Atom syntax theme based around a small palette of contrasting colours.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "simple",
+    "dark"
+  ],
+  "repository": "https://github.com/paulhorner79/el-picador-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}

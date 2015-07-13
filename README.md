@@ -26,10 +26,10 @@ El Picador is the opening track on Calexico's 2000 album, _Hot Rail_.
 ## Examples
 
 ### PHP
-![Screenshot](https://github.com/paulhorner79/calexico-syntax/raw/master/screenshot-php.png)
+![PHP Screenshot](https://raw.githubusercontent.com/paulhorner79/el-picador-syntax/master/screenshot-php.png)
 
 ### CSS
-![Screenshot](https://github.com/paulhorner79/calexico-syntax/raw/master/screenshot-css.png)
+![CSS Screenshot](https://raw.githubusercontent.com/paulhorner79/el-picador-syntax/master/screenshot-css.png)
 
 ### Python
-![Screenshot](https://github.com/paulhorner79/calexico-syntax/raw/master/screenshot-python.png)
+![Python Screenshot](https://raw.githubusercontent.com/paulhorner79/el-picador-syntax/master/screenshot-python.png)

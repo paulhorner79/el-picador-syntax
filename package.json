@@ -1,7 +1,7 @@
 {
   "name": "El-Picador-syntax",
   "theme": "syntax",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A dark Atom syntax theme based around a small palette of contrasting colours.",
   "keywords": [
     "syntax",

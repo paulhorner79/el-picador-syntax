@@ -1,6 +1,6 @@
 @import "syntax-variables";
 
-atom-text-editor, :host { /* :host added */
+atom-text-editor {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
 
@@ -33,12 +33,12 @@ atom-text-editor, :host { /* :host added */
         background-color: @syntax-selection-color;
     }
 
-    .search-results .marker .region {
+    .search-results .syntax--marker .region {
         background-color: transparent;
         border: @syntax-result-marker-color;
     }
 
-    .search-results .marker.current-result .region {
+    .search-results .syntax--marker.current-result .region {
         border: @syntax-result-marker-color-selected;
     }
 
@@ -51,171 +51,171 @@ atom-text-editor, :host { /* :host added */
     }
 }
 
-.comment {
+.syntax--comment {
     color: @comment;
 }
-.string {
+.syntax--string {
     color: @string;
 }
 
 /** CONSTANTS **/
-.constant {
+.syntax--constant {
     color: @constant;
 }
-.constant.numeric,
-.constant.language,
-.constant.character,
-.constant.other {
+.syntax--constant.syntax--numeric,
+.syntax--constant.syntax--language,
+.syntax--constant.syntax--character,
+.syntax--constant.syntax--other {
     font-weight: bold;
 }
-.constant.entity {
+.syntax--constant.syntax--entity {
     color: @entity;
 }
 
 /** VARIABLES **/
-.variable {
+.syntax--variable {
     color: @variable;
 }
-.variable.parameter {
+.syntax--variable.syntax--parameter {
     font-style: italic;
 }
-.variable.other.property {
+.syntax--variable.syntax--other.syntax--property {
     color: @variable-prop;
     font-weight: normal;
 }
 
 /** KEYWORDS - bold */
-.keyword {
+.syntax--keyword {
     color: @keyword;
     font-weight: bold;
 }
-.keyword.other {
+.syntax--keyword.syntax--other {
     font-weight: normal;
 }
-.keyword.other.unit {
+.syntax--keyword.syntax--other.syntax--unit {
     color: @constant;
 }
 
 /** STORAGE  **/
-.storage {
+.syntax--storage {
     color: @storage;
 }
-.storage.modifier,
-.storage.type {
+.syntax--storage.syntax--modifier,
+.syntax--storage.syntax--type {
     font-weight: bolder;
 }
 
 /** ENTITIES  **/
-.entity {
+.syntax--entity {
     color: @entity;
 }
-.entity.name.class,
-.entity.name.function {
+.syntax--entity.syntax--name.syntax--class,
+.syntax--entity.syntax--name.syntax--function {
     font-weight: bolder;
 }
-.entity.other.attribute-name {
+.syntax--entity.syntax--other.syntax--attribute-name {
     color: @constant;
 }
 
 /** SUPPORT **/
-.support {
+.syntax--support {
     color: @support;
 }
-.support.constant {
+.syntax--support.syntax--constant {
     color: @constant;
     font-weight: bolder;
 }
-.support.function {
+.syntax--support.syntax--function {
     font-weight: bolder;
 }
-.support.type,
-.support.function.magic {
+.syntax--support.syntax--type,
+.syntax--support.syntax--function.syntax--magic {
     font-style: italic;
 }
 
 /** META **/
-.meta.function-call {
+.syntax--meta.syntax--function-call {
 	color: @function;
 }
-.meta.function-call.object {
+.syntax--meta.syntax--function-call.syntax--object {
 	font-style: italic;
 }
-.meta.function-call.arguments {
+.syntax--meta.syntax--function-call.syntax--arguments {
 	color: @variable;
 }
-.punctuation.definition.arguments.begin,
-.punctuation.definition.arguments.end  {
+.syntax--punctuation.syntax--definition.syntax--arguments.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--arguments.syntax--end  {
     font-weight: bolder;
 	color: @variable;
 }
-.meta.brace.curly,
-.punctuation.section.property-list,
-.punctuation.section.scope {
+.syntax--meta.syntax--brace.syntax--curly,
+.syntax--punctuation.syntax--section.syntax--property-list,
+.syntax--punctuation.syntax--section.syntax--scope {
     font-weight: bold;
 }
 
 /** Punctuation **/
-.punctuation.entity {
+.syntax--punctuation.syntax--entity {
     color: @entity;
 }
-.punctuation.keyword {
+.syntax--punctuation.syntax--keyword {
     color: @keyword;
 }
-.punctuation.comment {
+.syntax--punctuation.syntax--comment {
     color: @comment;
 }
-.punctuation.storage,
-.entity.other.attribute-name .punctuation {
+.syntax--punctuation.syntax--storage,
+.syntax--entity.syntax--other.syntax--attribute-name .syntax--punctuation {
     color: @storage;
 }
-.punctuation.support {
+.syntax--punctuation.syntax--support {
     color: @support;
 }
-.punctuation.variable {
+.syntax--punctuation.syntax--variable {
     color: @variable;
 }
 
 /** INVALID **/
-.invalid {
+.syntax--invalid {
     color: @syntax-text-color;
     background-color: @syntax-color-removed;
 }
-.invalid .deprecated {
+.syntax--invalid .syntax--deprecated {
 	color: @syntax-text-color;
 	background-color: @syntax-color-modified;
 }
 
 /** OTHER **/
-.focusable-panel {
+.syntax--focusable-panel {
     opacity: 1;
     box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
 }
 
 /** Markdown **/
-.source.gfm .markup {
+.syntax--source.syntax--gfm .syntax--markup {
     -webkit-font-smoothing: auto;
-    &.heading {
+    &.syntax--heading {
         color: @support;
     }
-    &.markup.raw,
-    &.markup.raw .support {
+    &.syntax--markup.syntax--raw,
+    &.syntax--markup.syntax--raw .syntax--support {
         color: @comment;
     }
 }
 
 /** git updates **/
-.git-line-added,
-.git-line-added:before {
+.syntax--git-line-added,
+.syntax--git-line-added:before {
     color: @syntax-color-added;
     opacity: 1;
 }
-.git-line-modified,
-.git-line-modified:before {
+.syntax--git-line-modified,
+.syntax--git-line-modified:before {
     color: @syntax-color-modified;
     opacity: 1;
 }
-.git-line-removed,
-.git-line-removed:before {
+.syntax--git-line-removed,
+.syntax--git-line-removed:before {
     color: @syntax-color-removed;
     opacity: 1;
 }

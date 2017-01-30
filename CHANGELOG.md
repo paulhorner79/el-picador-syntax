@@ -1,3 +1,6 @@
+## 1.0
+* Removed deprecated features from Atom 1.13
+
 ## 0.4.1
 * Bugfix - removed recursive @bg parameter used by markdown preview
 
